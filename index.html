@@ -12,6 +12,24 @@
         <p class="text">この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。この文章はダミーです。</p>
       </div>
     </div> 
+    <script>
+      let elements = [];
+      const isEllipsisActive = (el) => {
+        return (el.offsetHeight < el.scrollHeight);
+      }
+      
+      window.addEventListener('load', () => {
+        elements = document.querySelectorAll('.text');
+        
+        elements.forEach((el) => {
+          console.log(isEllipsisActive(el));
+          if(isEllipsisActive(el)) {
+            const text = el.textContent;
+            el.setAttribute('title', text);
+          }
+        });
+      });
+    </script>
   </body>
 </html>
 
