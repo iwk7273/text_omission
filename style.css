@@ -62,14 +62,8 @@ a, a:link, a:visited, a:active {
 
 .card_item .desc:hover {
   white-space: normal;
-  position: absolute;
-  background-color: #fff;
-  z-index: 10;
   border: solid 1px #ccc;
   border-radius: 5px;
-  padding: 5px 10px;
-  top: -3px;
-  left: -8px;
 }
 
 
