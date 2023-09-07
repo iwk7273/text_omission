@@ -40,14 +40,16 @@ a, a:link, a:visited, a:active {
   padding: 28px;
 }
 .card_item .title {
-  font-size: 2.4rem;
-  color: #3b4043;
-  line-height: 1.6;
-  margin-bottom: 12px;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 .card_item .desc {
-  font-size: 1.2rem;
-  color: #606060;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
 }
 .card_item .cat {
   display: inline-block;
@@ -58,15 +60,5 @@ a, a:link, a:visited, a:active {
   margin-bottom: 10px;
 }
 
-.card_item .title {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-.card_item .desc {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
+
+
