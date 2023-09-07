@@ -57,3 +57,16 @@ a, a:link, a:visited, a:active {
   padding: 4px 30px 2px;
   margin-bottom: 10px;
 }
+
+.card_item .title {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.card_item .desc {
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
