@@ -1,74 +1,21 @@
-html {
-  font-size: 62.5%;
+.text {
+  white-space: nowrap;
+  width: 5em;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  padding-top: .5em;
 }
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  border: 0;
-  list-style: none;
-}
-a, a:link, a:visited, a:active {
-  text-decoration: none;
-  color: inherit;
-}
-.card_item {
-  width: 310px;
-  border: 1px solid #e3e3e3;
-  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.5);
-  margin: 60px;
-}
-.card_item .thum_box {
-  width: 100%;
-  height: 200px;
-  background: #efefef;
+
+.text[title] {
   position: relative;
-  overflow: hidden;
+  border-bottom: 3px solid deeppink;
 }
-.card_item .thum_box img {
-  width: auto;
-  height: auto;
-  max-width: 80%;
-  max-height: 100%;
+
+.text[title]:before {
+  content: "↓hover here↓";
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: -.2em;
+  color: deeppink;
+  font-size: .5em;
+  font-weight: bold;
 }
-.card_item .text_box {
-  width: 100%;
-  padding: 28px;
-}
-.card_item .title {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-.card_item .desc {
-  overflow: hidden;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
-}
-.card_item .cat {
-  display: inline-block;
-  font-size: 1.4rem;
-  color: #fff;
-  background: #606060;
-  padding: 4px 30px 2px;
-  margin-bottom: 10px;
-}
-
-.card_item .desc:hover {
-  white-space: normal;
-  overflow: visible;
-  border: solid 1px #ccc;
-  border-radius: 5px;
-  z-index: 10;
-  background-color: #fff;
-}
-
-
-
-
